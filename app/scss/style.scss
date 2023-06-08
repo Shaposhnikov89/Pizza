@@ -1,0 +1,512 @@
+$redlight: #EC4D2F;
+$reddark: #B83922;
+
+@font-face {
+    font-family: "Apple Chancery"; 
+    src: url("../fonts/Apple\ Chancery.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: normal; 
+    } 
+
+body {
+    
+    height: 1307px;
+    background-color: #1D1B2B;
+    margin: 0 auto;
+header {
+    
+    height: 100px;
+    background-color: $redlight;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-side-logo{
+        background-color: $reddark;
+        width: 545px;
+        height: 74px;
+        border-radius: 0 35px 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+            font-family: Anton;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            margin-left: 10px;
+            margin-right: 15px;
+            color: white;
+
+        }
+        
+    }
+
+
+    .header-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 800px;
+        margin: 0 auto;
+
+
+        .menu-item{ 
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            margin-right: 2%;
+            padding: 5px;
+            text-decoration: none;
+
+            &:hover{
+                background-color: $reddark;
+                border-radius: 10px;
+                cursor: pointer;
+                
+            }
+            
+        }
+    }
+
+    .right-side {
+        background-color: $reddark;
+        width: 545px;
+        height: 74px;
+        border-radius: 35px 0px 0px 35px ;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: auto;
+        position: relative;
+
+
+
+        .language {
+
+            margin: 0px 20px 0px 20px;
+
+            &:hover .lang{
+                opacity: 1;
+            }
+        }
+
+        .lang {
+            position: absolute;
+            bottom: -120px;
+            box-sizing: border-box;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+            width: 119px;
+            height: 100px;
+            text-align: center;
+            border: 2px solid #EC4D2F;
+            border-radius: 28px;
+            opacity: 0;
+        }
+    }
+}
+
+@import url(menu.scss);
+
+main {
+    height: 1051px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    
+
+    section {
+        margin-left: 17vw;
+        margin-top: 81px;
+
+        .pizza-special{
+            padding: 0;
+            margin: 0;
+            
+            
+            position: relative;
+            
+            .p1{
+                font-family: Anton;
+                font-size: 184px;
+                font-weight: 400;
+                line-height: 277px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .p2{
+                font-family: Apple Chancery;
+                font-size: 84px;
+                font-style: italic;
+                line-height: 133px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: $reddark;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 190px;
+                left: 225px;
+
+
+            }
+        }
+
+        .text-block{
+            margin-top: 60px;
+
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 130%;                          
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+
+            }
+
+            h3{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+
+            ul{
+
+                li{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                    list-style: none;
+                    margin-bottom: 20px;
+
+                    &::before{
+                        content: '\2218';
+                        margin-right: 5px;
+                        color: $redlight;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+            
+        }
+        .menu-button{
+            background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+            padding: 16px 30px;
+            border: 2px solid #EC4D2F;
+            border-radius: 15px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: #FFFFFF;
+            cursor: pointer;
+            margin-top: 40px;
+
+            &:hover{
+                background-color: $redlight;
+            }
+
+            &:active{
+                background-color: $reddark;
+            }
+
+            
+        }
+    }
+
+    aside{
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 88px;
+        .aside-slider{
+            // background-color: #fff;
+            width: 100%;
+            height: 200px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .pizza-img{
+                padding: 0;
+                margin: 0;
+                position: relative;
+
+                .discount{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 160px;
+                    height: 160px;
+                    border: 1px solid $redlight;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -35px;
+                    left: -35px;
+                    z-index: 0;
+
+
+
+                    span{
+                        font-family: 'Apple Chancery';
+                        font-style: italic;
+                        font-weight: 0;
+                        font-size: 48.8136px;
+                        line-height: 77px;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: $redlight;
+                    }
+
+
+                }
+
+                .pizza-circle{
+                    width: 518px;
+                    height: 518px;
+                    border: 1px solid $redlight;
+                    border-radius: 50%;
+                    padding: 20px;
+                    position: relative;
+                    z-index: 2;
+                    background-color: #1D1B2B;
+                    background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%), #1D1B2B;
+
+
+                    img{
+                        width: 508px;
+                        z-index: 3;
+                        position: relative;
+                        padding-left: 5px;
+                        padding-top: 5px;
+    
+                    }
+                }
+
+                
+                
+            }
+
+            .pizza-bottom{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
+
+
+                .pizza-description{
+                    
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .pizza-price{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: $redlight;
+                }
+
+                .buttons-slider{
+                    margin-top: 43px;
+
+                    .prev{
+                        width: 87px;
+                        height: 47px;
+                        left: 1448px;
+                        top: 904px;
+                        background: #B83922;
+                        border-radius: 0px 100px 100px 0px;
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                        color: #FFFFFF;
+                        font-size: 25px;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $redlight;
+                        }
+            
+                        &:active{
+                            background-color: $reddark;
+                        }
+                    }
+
+                    .next{
+                        width: 87px;
+                        height: 47px;
+                        left: 1468px;
+                        top: 904px;
+                        background: #B83922;
+                        border-radius: 0px 100px 100px 0px;
+                        color: #FFFFFF;
+                        font-size: 25px;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $redlight;
+                        }
+            
+                        &:active{
+                            background-color: $reddark;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+footer{
+    height: 236px;
+    max-width: 100%;
+    background-color: $redlight;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 50px 0px 0px 50px;
+    
+
+    .footer-logo{
+        display: flex;
+        align-items: flex-start;
+        margin-left: 30%;
+
+        img{
+            width: 45.5px;
+            height: 45.5px;
+
+        }
+
+        span{
+            font-family: 'Anton';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            margin-left: 15px;
+        }
+
+    }
+
+    
+
+    .footer-menu{
+
+    
+            li{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+                list-style: none;
+                margin-bottom: 20px;
+
+                a{
+                    font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                }
+                        }
+
+              
+    }
+
+    .footer-contact{
+        margin-right: 2%;
+
+        
+            li{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+                list-style: none;
+                margin-bottom: 20px;
+
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                
+
+
+                a{
+                    font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+                text-decoration: none;
+
+               
+
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                }
+                        }
+
+        
+
+       
+    }
+}
+
+
+}
+
+
+

@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Apple Chancery";
+  src: url("../fonts/Apple Chancery.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+.menu-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu-wrapper p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: white;
+  margin: 50px 25px;
+}
+.menu-wrapper .main-menu {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 30px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu-wrapper .main-menu .pizza-element {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+  border: 2px solid #EC4D2F;
+  border-radius: 28px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu-wrapper .main-menu .pizza-element img {
+  margin-top: 10px;
+}
+.menu-wrapper .main-menu .pizza-element h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.menu-wrapper .main-menu .pizza-element p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.menu-wrapper .main-menu .pizza-element .menu-button {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+  padding: 16px 30px;
+  border: 2px solid #EC4D2F;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.menu-wrapper .main-menu .pizza-element .menu-button:hover {
+  background-color: #EC4D2F;
+}
+.menu-wrapper .main-menu .pizza-element .menu-button:active {
+  background-color: #B83922;
+}
+.menu-wrapper .main-menu-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+.menu-wrapper .main-menu-buttons .prev {
+  width: 87px;
+  height: 47px;
+  background: #B83922;
+  border-radius: 0px 100px 100px 0px;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #FFFFFF;
+  font-size: 25px;
+  cursor: pointer;
+}
+.menu-wrapper .main-menu-buttons .prev:hover {
+  background-color: #EC4D2F;
+}
+.menu-wrapper .main-menu-buttons .prev:active {
+  background-color: #B83922;
+}
+.menu-wrapper .main-menu-buttons .next {
+  width: 87px;
+  height: 47px;
+  background: #B83922;
+  border-radius: 0px 100px 100px 0px;
+  color: #FFFFFF;
+  font-size: 25px;
+  cursor: pointer;
+}
+.menu-wrapper .main-menu-buttons .next:hover {
+  background-color: #EC4D2F;
+}
+.menu-wrapper .main-menu-buttons .next:active {
+  background-color: #B83922;
+}
+.menu-wrapper .pag-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 50px 0;
+}
+.menu-wrapper .pag-counter .current {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.menu-wrapper .pag-counter .slash {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.menu-wrapper .pag-counter .total {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}

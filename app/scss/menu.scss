@@ -1,0 +1,198 @@
+$redlight: #EC4D2F;
+$reddark: #B83922;
+
+
+@font-face {
+    font-family: "Apple Chancery"; 
+    src: url("../fonts/Apple\ Chancery.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: normal; 
+    } 
+
+.menu-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+text-transform: uppercase;
+color: white;
+margin: 50px 25px;
+}
+
+
+
+.main-menu{
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-items: center;
+    align-items: stretch;
+    gap: 30px;
+    // max-width: 1150px;
+    margin: 0 auto;
+    justify-content: center;
+    
+
+            .pizza-element{
+                // width: 370px;
+                // height: 607px;
+                background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+                border: 2px solid $redlight;
+                border-radius: 28px;
+                color: #FFFFFF;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                img{
+                    margin-top: 10px;
+                }
+
+                h1{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-bottom: 0;
+                }
+
+                p{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: center;
+                    // line-height: 130%;
+                    color: #FFFFFF;
+                    margin-bottom: 0;
+                }
+
+                
+
+
+                .menu-button{
+                    background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+                    padding: 16px 30px;
+                    border: 2px solid #EC4D2F;
+                    border-radius: 15px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+        
+                    &:hover{
+                        background-color: $redlight;
+                    }
+        
+                    &:active{
+                        background-color: $reddark;
+                    }
+                }
+
+
+               
+
+
+            }
+}
+
+.main-menu-buttons{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .prev{
+        width: 87px;
+        height: 47px;
+        background: #B83922;
+        border-radius: 0px 100px 100px 0px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        color: #FFFFFF;
+        font-size: 25px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $redlight;
+        }
+
+        &:active{
+            background-color: $reddark;
+        }
+    }
+
+    .next{
+
+        width: 87px;
+                        height: 47px;
+                        
+                        background: #B83922;
+                        border-radius: 0px 100px 100px 0px;
+                        color: #FFFFFF;
+                        font-size: 25px;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $redlight;
+                        }
+            
+                        &:active{
+                            background-color: $reddark;
+                        }
+    }
+}
+
+
+.pag-counter{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 50px 0;
+
+
+    .current{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .slash{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+    .total{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+}
